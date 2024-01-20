@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import AddIcon from '@mui/icons-material/Add';
 import Fab from '@mui/material/Fab';
 import Zoom from '@mui/material/Zoom';
@@ -17,10 +17,9 @@ function CreateArea(props) {
         ...prevNote,
         [name]: value
       };
-
     });
   }
-  
+
   function submitNote(event) {
     props.onAdd(note);
     setNote({
@@ -57,8 +56,11 @@ function CreateArea(props) {
         <Fab onClick={submitNote}>
         <AddIcon />
         </Fab>
-      </Zoom>
+        </Zoom>
         </div>
+        
+      
+      
         </div>
       </form>
     </div>
